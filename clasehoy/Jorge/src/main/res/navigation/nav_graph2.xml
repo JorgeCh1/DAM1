@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/menuFragment2">
+
+    <fragment
+        android:id="@+id/tablaFragment2"
+        android:name="ni.edu.uca.octavio.TablaFragment"
+        android:label="fragment_tabla"
+        tools:layout="@layout/fragment_tabla" />
+    <fragment
+        android:id="@+id/menuFragment2"
+        android:name="ni.edu.uca.octavio.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment2_to_tablaFragment2"
+            app:destination="@id/tablaFragment2" />
+    </fragment>
+</navigation>
